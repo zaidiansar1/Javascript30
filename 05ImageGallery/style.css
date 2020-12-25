@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-color: rgb(216, 157, 29);
+}
+
+.panel {
+    color: rgb(94, 9, 231);
+    flex: 1;
+    border-right: 3px white solid;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+    transition: 
+        flex 0.7s ease-in,
+        transform 0.7s ease-in-out;
+}   
+
+.panel > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transform: translateY(-100%)
+}
+
+p:last-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transform: translateY(100%)
+}
+
+p:not(:first-child):not(:last-child) {
+    font-size: 2rem;
+    color: rgb(8, 226, 63);
+    font-weight: bolder
+}
+
+.panel1 {
+    background-image: url("./img/pexels-anete-lusina-4792716.jpg");
+}
+.panel2 {
+    background-image: url("./img/pexels-marta-wave-5876184.jpg");
+}
+.panel3 {
+    background-image: url("./img/pexels-charles-parker-5845733.jpg");
+}
+.panel4 {
+    background-image: url("./img/pexels-ono-kosuki-5648048.jpg");
+}
+.panel5 {
+    background-image: url("./img/pexels-marta-wave-5876245.jpg");
+}
+
+.open {
+    flex: 5;
+}
+
+div.open-active > * {
+    transform: translateY(0);
+}

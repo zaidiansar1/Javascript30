@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(196, 191, 191);
+}
+
+.header {
+    background-image: url("https://images.pexels.com/photos/2080960/pexels-photo-2080960.jpeg?cs=srgb&dl=pexels-johannes-plenio-2080960.jpg&fm=jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    color: red;
+    font-style: italic;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: .8rem 15rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+
+.wrapper {
+    margin: 10rem 20rem;
+    background-color: white;
+    box-shadow: -2px 5px 15px 10px rgb(90, 83, 83);
+}
+
+p {
+    padding: 1rem 1rem;
+}
+
+.slide-in {
+    padding-left: 7rem;
+}
+
+
+
