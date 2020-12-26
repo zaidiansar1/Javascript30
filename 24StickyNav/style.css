@@ -8,29 +8,35 @@ body {
     background-color: rgb(196, 191, 191);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
 .header {
     background-image: url("https://images.pexels.com/photos/2080960/pexels-photo-2080960.jpeg?cs=srgb&dl=pexels-johannes-plenio-2080960.jpg&fm=jpg");
     height: 50vh;
     background-size: cover;
     background-position: bottom;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding-top: 1.5rem;
-    font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 2.5rem;
     color: red;
-    font-style: italic;
+
+    padding: 2rem 0;
 }
 
 ul {
     display: flex;
-    justify-content: space-between;
-    background-color: black;
     align-items: center;
-    padding: .8rem 15rem;
-}
-
-li {
-    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0px;
 }
 
 a {
@@ -52,6 +58,30 @@ p {
 
 .slide-in {
     padding-left: 7rem;
+}
+
+.nav-logo {
+    max-width: 0;
+    text-align: center;
+    overflow: hidden;
+    
+    background-color: white;
+}
+
+.stick .nav-logo {
+    max-width: 100px;
+    transition: all .8s ease-in-out;
+}
+
+
+
+.stick .menu {
+    position: fixed;
+}
+
+.stick .wrapper {
+    transform: scale(1.1);
+    z-index: -1;
 }
 
 
